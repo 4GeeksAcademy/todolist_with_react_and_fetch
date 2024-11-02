@@ -125,8 +125,10 @@ const Home = () => {
                     })
                 }
             </ul>
-            <button onClick={deleteAllTasks} className="btn btn-danger mb-3">Borrar todas entradas</button>
-            <p style={{ color: 'white' }}>{taskList.length} Pendientes</p>
+            <div className="text-center">
+                <button onClick={deleteAllTasks} className="btn btn-warning mb-3">Borrar todas las tareas!!</button>
+            </div>
+            <p style={{ color: 'white' }}>{taskList.length} tareas pendientes de ejecutar!</p>
         </div>
     );
 };
